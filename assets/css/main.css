@@ -1094,6 +1094,7 @@ textarea {
 .image-title {
 	font-size: 1.4rem;
 	margin-bottom: 0px;
+	margin-top: 30px;
 	/* color: ; */
 }
 
@@ -2501,4 +2502,9 @@ a {
 
 .fa-github {
 	padding-left: 10px;
+}
+
+.skillList {
+	display: flex;
+	justify-content: space-evenly;
 }
