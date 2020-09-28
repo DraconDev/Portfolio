@@ -601,7 +601,8 @@ body,
 input,
 textarea,
 select {
-	font-family: "Source Sans Pro", "sans-serif";
+	font-family: "Comfortaa", cursive;
+	/* font-family: "Source Sans Pro", "sans-serif"; */
 	font-weight: 300;
 	font-size: 18pt;
 	line-height: 1.75em;
@@ -1093,7 +1094,7 @@ textarea {
 .image-title {
 	font-size: 1.4rem;
 	margin-bottom: 0px;
-	color: ;
+	/* color: ; */
 }
 
 .title-github-icon {
@@ -1112,12 +1113,12 @@ textarea {
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 256px;
+	/* height: 256px; */
 	background: url("images/overlay.png");
 }
 
 .project-picture {
-	height: 256px;
+	/* height: 256px; */
 	width: 100%;
 	object-fit: contain;
 	overflow: hidden;
@@ -1127,6 +1128,8 @@ textarea {
 .image img {
 	display: block;
 	width: 100%;
+	display: cover;
+	/* height: 40vh; */
 	/* background-color: #f00; */
 }
 
@@ -1332,6 +1335,7 @@ ul.icons a {
 	line-height: 2em;
 	text-align: center;
 	border: 0;
+	color: black;
 }
 
 /* Sections/Article */
@@ -2009,10 +2013,27 @@ body.is-touch .poptrox-popup .closer {
 	top: 0;
 	height: 3em;
 	line-height: 3em;
+	width: 100%;
+	text-align: right;
+	/* display: flex;
+	justify-content: flex-end; */
+}
+
+#skills {
+	background-color: white;
+	filter: brightness(95%);
+}
+
+.listName {
+	/* justify-self: flex-start; */
+	margin-right: auto;
+	padding-left: 0.3em;
 }
 
 #header nav ul {
 	margin: 0;
+	display: flex;
+	justify-content: flex-end;
 }
 
 #header nav ul li {
@@ -2027,7 +2048,7 @@ body.is-touch .poptrox-popup .closer {
 	text-decoration: none;
 	height: 3em;
 	line-height: 3em;
-	padding: 0 0.5em 0 0.5em;
+	padding: 0 0.3em 0 0.3em;
 	outline: 0;
 }
 
@@ -2038,12 +2059,13 @@ body.is-touch .poptrox-popup .closer {
 	}
 
 	#header h1 {
-		text-align: center;
+		/* text-align: center; */
 		position: relative;
 		left: 0;
 		top: 0;
 		height: 2.5em;
 		line-height: 2.5em;
+		padding-left: 0.3em;
 	}
 
 	#header h1 a {
@@ -2051,7 +2073,7 @@ body.is-touch .poptrox-popup .closer {
 	}
 
 	#header nav {
-		display: none;
+		/* display: none; */
 	}
 }
 
@@ -2081,6 +2103,8 @@ body {
 	width: 45em;
 	max-width: calc(100% - 4em);
 	margin: 0 auto;
+	/* background-color: #f00; */
+	/* opacity: 0.1; */
 }
 
 .main > .content > :last-child {
@@ -2381,10 +2405,16 @@ body.is-touch .main {
 /* Intro */
 
 #intro {
-	background: url("images/overlay.png"), url("../../images/intro.jpg");
-	/* background: url("../../images/intro.jpg"), url("../../images/intro.jpg"); */
-	background-size: 256px 256px, cover;
-	background-attachment: fixed, fixed;
+	/* background: url("https://media0.giphy.com/media/26ueZDPcBr2BttN3W/giphy.gif"),
+		url("../../images/intro.gif"); */
+	/* url("https://media0.giphy.com/media/l3q2RgN7WUjeUUXm0/giphy.gif"), */
+	/* url("images/intro.jpg"), */
+	background: url("https://images.unsplash.com/photo-1467685790346-20bfe73a81f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+	/* background: url("https://media2.giphy.com/media/cjn66yayqVbg97usN2/giphy.gif"); */
+	/* background: url("../../images/intro.jpg"); */
+	/* background-size: 256px 256px, cover; */
+	background-size: cover;
+	/* background-attachment: fixed, fixed; */
 	background-position: top left, bottom center;
 	background-repeat: repeat, no-repeat;
 }
@@ -2444,4 +2474,31 @@ body.is-touch .main {
 	#contact .box {
 		padding: 1em 1em 2em 1em;
 	}
+}
+
+.from-left,
+.from-right {
+	width: 100% !important;
+	/* background-color: #f00; */
+}
+
+.from-left.a.p,
+.from-right.a.p {
+	width: 100% !important;
+	padding-left: 10px;
+	/* background-color: #f00; */
+}
+
+/* @media screen and (max-width: 480px) {
+	nav {
+		display: block;
+	}
+} */
+
+a {
+	height: 100% !important;
+}
+
+.fa-github {
+	padding-left: 10px;
 }
