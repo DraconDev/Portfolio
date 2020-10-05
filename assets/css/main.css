@@ -2508,3 +2508,24 @@ a {
 	display: flex;
 	justify-content: space-evenly;
 }
+
+.skillList__skill {
+	/* border-bottom: 1px solid black; */
+	/* filter: brightness(1); */
+	background-color: #e5e6e7;
+	filter: brightness(110%);
+	margin: 4px 0;
+	border-radius: 3px;
+	/* width: 50%/; */
+}
+
+.skillList__skill:hover {
+	background-color: #e5e6e7;
+	filter: brightness(100%);
+	transition: 1s;
+}
+
+.image:hover {
+	transition: 2s ease;
+	transform: scale(1.03);
+}
